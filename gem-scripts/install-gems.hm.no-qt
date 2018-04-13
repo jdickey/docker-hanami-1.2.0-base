@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# NOTE that Version 2.7.0 of the `mail` Gem **must** be installed using `--nodoc`
+#      or the Yard parser will raise a `SystemStackError`. Workaround is to
+#      specify `--no-doc` for the `mail` Gem.
+#      The issue https://github.com/mikel/mail/issues/1211 has been opened.
+gem install mail -v 2.7.0 --no-doc
+gem install hanami:1.2.0 hanami-model:1.2.0 hanami-webconsole dotenv minitest shotgun
